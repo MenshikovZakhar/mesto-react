@@ -15,7 +15,6 @@ function App() {
     name: "",
     link: "",
   });;
-  const [isImagePopupOpen, setIsImagePopupOpen] = useState(false)
 
   //открытие попапа добавления карточки
   const handleAddPlaceClick = () => {
@@ -52,7 +51,7 @@ function App() {
       />
       <Footer />
 
-      //попап редактирования профиля
+      {/**попап редактирования профиля*/}
       <PopupWithForm
         name='profile'
         title='Редактировать профиль'
@@ -69,7 +68,7 @@ function App() {
         </>}
       />
 
-      //попап добавления карточки
+      {/**попап добавления карточки*/}
       <PopupWithForm
         name='card'
         title='Новое место'
@@ -86,7 +85,7 @@ function App() {
         </>}
       />
 
-       //попап редактирования аватара
+      {/**попап редактирования аватара*/}
       <PopupWithForm
         name='avatar'
         title='Обновить аватар'
@@ -99,7 +98,7 @@ function App() {
         </>}
       />
 
-      //попап удаления карточки
+      {/**попап удаления карточки*/}
       <PopupWithForm
         name="delete"
         title="Вы уверены?"
@@ -107,7 +106,7 @@ function App() {
         onClose={closeAllPopups}
       ></PopupWithForm>
 
-      //попап с картинкой
+      {/**попап с картинкой*/}
       <ImagePopup card={selectedCard} onClose={closeAllPopups} />
     </div>
   )
