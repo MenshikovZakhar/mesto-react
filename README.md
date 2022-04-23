@@ -2,7 +2,7 @@
 
 Проектная работа №10: Место-реакт
 
-[Ссылка на проект](https://menshikovzakhar.github.io/mesto/)
+[Ссылка на проект](https://menshikovzakhar.github.io/mesto-react/)
 
 ## Описание
 
