@@ -1,0 +1,15 @@
+.popup__form-card {
+  margin: 0 auto;
+  border: none;
+  flex-direction: column;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .popup__form-card {
+    width: 238px;
+    padding: 0 22px 0 22px;
+    flex-direction: column;
+    display: flex;
+  }
+}

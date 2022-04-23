@@ -1,0 +1,18 @@
+.profile__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  max-width: 336px;
+  margin: 0;
+  padding: 0;
+  gap: 16px 18px;
+  align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__container {
+    gap: 14px 10px;
+    justify-content: center;
+    align-items: stretch;
+  }
+}

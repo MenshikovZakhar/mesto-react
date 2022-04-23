@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .popup__form-avatar {
+    width: 238px;
+    padding: 0 22px 0 22px;
+    flex-direction: column;
+    display: flex;
+  }
+}
