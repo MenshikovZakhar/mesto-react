@@ -10,4 +10,4 @@
 
 ## Технологии
 
-HTML5, CSS, BEM, Адаптивная верстка, Флексбоксы, Гриды, JavaScript, ООП, Модули js, Webpack, Валидации форм, применение HTTP API и Promise
+HTML5, CSS, BEM, Адаптивная верстка, Флексбоксы, Гриды, JavaScript, React.js, Модули js, Webpack, Валидации форм, применение HTTP API и Promise
