@@ -14,19 +14,10 @@ export default function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardCl
     useEffect(() => {
         Promise.all([api.getUserProfile(), api.getInitialCards()])
             .then(([{ name, about, avatar }, cardList]) => {
-                const card = cardList.map((data) => {
-                    return {
-                        name: data.name,
-                        link: data.link,
-                        likes: data.likes,
-                        id: data._id,
-                        ownerId: data.owner._id,
-                    };
-                });
+                setCards(cardList);
                 setUserName(name);
                 setUserDescription(about);
                 setUserAvatar(avatar);
-                setCards(card);
             })
             .catch((error) => {
                 console.log(error);
@@ -49,9 +40,14 @@ export default function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardCl
             </section>
             <section className="elements">
                 <ul className="elements__list">
-                    {cards.map((card) => (
-                        <Card key={card.id} card={card} onCardClick={onCardClick} />
-                    ))}
+                    {cards
+                        ? Array.from(cards).map((card) => {
+                            return (<Card card={card}
+                                key={card._id}
+                                onCardClick={onCardClick}
+                            />)
+                        })
+                        : null}
                 </ul>
             </section>
         </main>

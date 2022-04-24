@@ -58,15 +58,14 @@ function App() {
         isOpen={isEditProfilePopupOpen}
         onClose={closeAllPopups}
         btnText="Сохранить"
-        children={<>
-          <input className="popup__item popup__item-username" name="name" type="text" id="name-input" required
-            minLength="2" maxLength="40" />
-          <span className="name-input-error popup__input-error"></span>
-          <input className="popup__item popup__item-about" name="about" type="text" id="about-input" required
-            minLength="2" maxLength="200" />
-          <span className="about-input-error popup__input-error"></span>
-        </>}
-      />
+      >
+        <input className="popup__item popup__item-username" name="name" type="text" id="name-input" placeholder="Имя" required
+          minLength="2" maxLength="40" />
+        <span className="name-input-error popup__input-error"></span>
+        <input className="popup__item popup__item-about" name="about" type="text" id="about-input" placeholder="Деятельность" required
+          minLength="2" maxLength="200" />
+        <span className="about-input-error popup__input-error"></span>
+      </PopupWithForm>
 
       {/**попап добавления карточки*/}
       <PopupWithForm
@@ -75,15 +74,14 @@ function App() {
         isOpen={isAddPlacePopupOpen}
         onClose={closeAllPopups}
         btnText="Создать"
-        children={<>
-          <input className="popup__item popup__item-place" name="name" type="text" id="place-input" placeholder="Название" required
-            minLength="2" maxLength="30" />
-          <span className="place-input-error popup__input-error"></span>
-          <input className="popup__item popup__item-link" name="link" type="url" placeholder="Ссылка на картинку" id="link-input" required
-          />
-          <span className="link-input-error popup__input-error"></span>
-        </>}
-      />
+      >
+        <input className="popup__item popup__item-place" name="name" type="text" id="place-input" placeholder="Название" required
+          minLength="2" maxLength="30" />
+        <span className="place-input-error popup__input-error"></span>
+        <input className="popup__item popup__item-link" name="link" type="url" placeholder="Ссылка на картинку" id="link-input" required
+        />
+        <span className="link-input-error popup__input-error"></span>
+      </PopupWithForm>
 
       {/**попап редактирования аватара*/}
       <PopupWithForm
@@ -92,11 +90,10 @@ function App() {
         isOpen={isEditAvatarPopupOpen}
         onClose={closeAllPopups}
         btnText="Сохранить"
-        children={<>
-          <input className="popup__item popup__item-avatar" name="avatar" id="input-link" type="url" placeholder="Ссылка на аватарку" required />
-          <span className="input-link-error popup__input-error"></span>
-        </>}
-      />
+      >
+        <input className="popup__item popup__item-avatar" name="avatar" id="input-link" type="url" placeholder="Ссылка на аватарку" required />
+        <span className="input-link-error popup__input-error"></span>
+      </PopupWithForm>
 
       {/**попап удаления карточки*/}
       <PopupWithForm
