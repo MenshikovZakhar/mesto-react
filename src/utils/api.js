@@ -76,22 +76,24 @@ export class Api {
         })
             .then(this._checkResponse);
     }
-    //Лайк
-    addLike(id) {
-        return fetch(`${this._baseUrl}/cards/likes/${id}`, {
-            method: 'PUT',
-            headers: this._headers,
-        })
-            .then(this._checkResponse);
+
+    //Поставить/удалить лайк карточке
+    changeLikeCardStatus(id, isLiked) {
+        if (isLiked) {
+            return fetch(`${this._baseUrl}/cards/likes/${id}`, {
+                method: 'PUT',
+                headers: this._headers,
+            })
+                .then((res) => this._checkResponse(res))
+        } else {
+            return fetch(`${this._baseUrl}/cards/likes/${id}`, {
+                method: 'DELETE',
+                headers: this._headers,
+            })
+                .then((res) => this._checkResponse(res))
+        }
     }
-    //Снятие лайка
-    deleteLike(id) {
-        return fetch(`${this._baseUrl}/cards/likes/${id}`, {
-            method: 'DELETE',
-            headers: this._headers,
-        })
-            .then(this._checkResponse);
-    }
+
 }
 
 //подключение апи
