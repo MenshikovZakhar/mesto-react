@@ -18,7 +18,8 @@
 6. React, 
 7. JSX,
 8. React Router,
-9. Grid Layout и FLexbox.
+9. Grid Layout и FLexbox,
+10. Api.
 
 # Как развернуть проект
 
