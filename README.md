@@ -9,6 +9,8 @@
 
 [Ссылка на проект](https://menshikovzakhar.github.io/mesto-react/)
 
+![Watch the video](./preview.gif)
+
 ## Используемые технологии
 1. HTML,
 2. CSS,
