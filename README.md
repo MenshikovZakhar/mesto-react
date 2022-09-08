@@ -15,7 +15,7 @@
 взаимодействия с API, для управлениями формами создан собственный хук.
 Проект выполнен в рамках учебной программы Яндекс.Практикум по специальности веб-разработчик.
 
-[Ссылка на проект](https://menshikovzakhar.github.io/mesto-react/)
+## [Ссылка на проект](https://menshikovzakhar.github.io/mesto-react/)
 
 ![Watch the video](./preview.gif)
 
