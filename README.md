@@ -1,4 +1,10 @@
 # Проект: Место
+<p align="center">
+    <img alt="Version 1.0.0" src="https://img.shields.io/badge/version-1.0.0-blue" />
+    <img alt="Quality" src="https://img.shields.io/badge/status-release-orange.svg" >
+    <img alt="Made by: Comediany" src="https://img.shields.io/badge/made%20by-MenshikovZakhar-blue" />
+</p>
+
 
 ## Описание
 
@@ -11,7 +17,7 @@
 
 ![Watch the video](./preview.gif)
 
-## Используемые технологии
+## :hammer: Стэк технологий
 1. HTML,
 2. CSS,
 3. Адаптивная вёрстка,
@@ -23,7 +29,7 @@
 9. Grid Layout и FLexbox,
 10. Api.
 
-# Как развернуть проект
+## 💻 Как развернуть проек
 
 1. Клонируйте репозиторий:`https://github.com/MenshikovZakhar/mesto-react.git`;
 2. Введите npm -i, чтобы установить нужные зависимости;
