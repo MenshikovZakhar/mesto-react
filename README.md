@@ -24,7 +24,7 @@
 2. CSS,
 3. Адаптивная вёрстка,
 4. БЭМ,
-5.JavaScript,
+5. JavaScript,
 6. React, 
 7. JSX,
 8. React Router,
